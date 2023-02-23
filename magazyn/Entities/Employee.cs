@@ -9,7 +9,8 @@ namespace magazyn.Models
         public  int Id { get; set; }
         public string FirstName { get; set; }
 
-        [Index(IsUnique =true)]
+        
+        [Obsolete]
         public string Email { get; set; }
         public string LastName { get; set; }
         public string AccessLevel{ get; set; }

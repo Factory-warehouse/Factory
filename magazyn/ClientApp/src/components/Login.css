@@ -1,0 +1,42 @@
+ .formStyle{
+    
+
+    
+}
+.formStyle label{
+    font-size: 20px;
+    padding-left: 0;
+}
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+} 
+ /* input[type="text"]:focus{
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}  */
+#submitBttn{
+    display: flex;
+    width: 250px;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #757575;
+}
+#submitBttn:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.factoryIcon{
+   margin-right: 0px;
+}
