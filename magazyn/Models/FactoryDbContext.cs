@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace magazyn.Entities
 {
-    public class FactoryDatabase : DbContext
+    public class FactoryDbContext : DbContext
     {
-        public FactoryDatabase(DbContextOptions<FactoryDatabase> options) : base(options) {
+        public FactoryDbContext(DbContextOptions<FactoryDbContext> options) : base(options) {
         
         }
         public DbSet<Employee> Employees{ get; set; }
@@ -21,6 +21,7 @@ namespace magazyn.Entities
                 eb.HasMany(wi => wi.Products)
                 .WithOne(wi => wi.Employee)
                 .HasForeignKey(wi => wi.EmployeeId);
+                //Klucz obcy 
             });
             modelBuilder.Entity<Product>(eb =>
             {

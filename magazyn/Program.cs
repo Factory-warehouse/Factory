@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<FactoryDatabase>(
+builder.Services.AddDbContext<FactoryDbContext>(
     option => option.UseSqlServer(builder.Configuration.GetConnectionString("FactoryBoardsConnectionString"))
 );
 
